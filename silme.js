@@ -19,3 +19,16 @@ for (let i = 0; i < meyveAdeti; i++) {
 }
 
 console.log(meyveler);
+
+confirm("Meyve silmek istermisiniz");
+console.log(meyveler);
+
+
+let silinenmeyve = prompt("Hangi meyveyi silmek istersiniz?");
+
+for (let i = 0; i < meyveler.length; i++) {
+    if (meyveler[i] === silinenmeyve) {
+        meyveler.splice(i, 1);
+    }
+}
+console.log(meyveler);
